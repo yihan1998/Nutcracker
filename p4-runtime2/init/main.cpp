@@ -113,7 +113,7 @@ int run_control_plane(int readFd) {
         parser.runTest(input);
     }
 #endif
-#if 0
+#if 1
     {
         std::string cmd = "load_json";
         std::string C_input = "/home/ubuntu/Nutcracker/utils/p4-nutcracker/FLOW_MONITOR/ingress.json";
@@ -124,16 +124,6 @@ int run_control_plane(int readFd) {
     }
 #endif
 #if 0
-    {
-        std::string cmd = "run_test";
-        std::string test_input = "flow_monitor";
-        std::vector<std::string> input;
-        input.push_back(cmd);
-        input.push_back(test_input);
-        parser.runTest(input);
-    }
-#endif
-#if 1
     {
         std::string cmd = "load_json";
         std::string C_input = "/home/ubuntu/Nutcracker/utils/p4-nutcracker/FLOW_MONITOR_C/ingress.json";
